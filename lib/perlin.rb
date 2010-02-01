@@ -1,3 +1,6 @@
+# Perlin noise is a procedural texture primitive, used by visual
+# effects artists to increase the appearance of realism in computer
+# graphics. This is a type of gradient noise.
 class PerlinNoise
   PERLIN_YWRAPB = 4
   PERLIN_YWRAP = 1 << PERLIN_YWRAPB;
@@ -22,7 +25,6 @@ class PerlinNoise
 
 
   def initialize(_seed=100, _ampl=0.5, _falloff=0.5)
-    @perlin_octaves = (1..4).to_a  # 0..3
     @perlin_octaves = (1..4).to_a  # 0..3
     @amp_falloff, @ampl_t = _falloff, _ampl
 
@@ -212,7 +214,7 @@ Bacon.summary_on_exit
 
 describe 'PerlinNoise' do
   it 'initializes' do
-    @perlin = PerlinNoise.new 100
+    @perlin = PerlinNoise.new 100  # seed of 100
     @perlin.instance_eval { @p_TWO_PI }.should == 1440
     @perlin.instance_eval { @p_PI }.should == 720
   end
