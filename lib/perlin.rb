@@ -35,6 +35,10 @@ class PerlinNoise
     seed_noise _seed
   end
 
+  def rand_seed
+    seed_noise rand(2000)
+  end
+
   def seed_noise(_what)
     srand _what
     @perlin = (0..PERLIN_SIZE+1).map{|i| (rand * 100).to_i }

@@ -9,6 +9,10 @@ class Perlin
     @p, @o = presistence, octave
   end
 
+  def rand_seed
+    @seed = (rand * 10000).to_i
+  end
+
   def interpolate(a, b, x)
     ft = x * Math::PI;  f = (1-Math.cos(ft)) * 0.5
     a * (1 - f) + b * f
@@ -84,7 +88,6 @@ end
 
 
 
-#__END__
 require 'bacon';  Bacon.summary_on_exit
 
 describe 'Perlin noise' do
