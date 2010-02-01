@@ -1,5 +1,6 @@
 class Perlin
   # simple perlin noise, pure ruby.
+  # Invented in 1985 by Ken Perlin. http://mrl.nyu.edu/~perlin/
   # port of c extension: github.com/boj/ruby-perlin
 
   attr_reader :seed

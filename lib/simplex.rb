@@ -2,6 +2,7 @@
 # function comparable to Perlin noise ("classic" noise) Ken Perlin
 # designed the algorithm in 2001 to address the limitations of his
 # classic noise function, especially in higher dimensions.
+# Invented in 2001 by Ken Perlin. http://mrl.nyu.edu/~perlin/
 class SimplexNoise
   SIMPLEX_SQRT3 = 1.73205080756888
   SIMPLEX_SQRT5 = 2.23606797749979

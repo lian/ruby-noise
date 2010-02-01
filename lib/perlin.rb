@@ -1,6 +1,7 @@
 # Perlin noise is a procedural texture primitive, used by visual
 # effects artists to increase the appearance of realism in computer
 # graphics. This is a type of gradient noise.
+# Invented in 1985 by Ken Perlin. http://mrl.nyu.edu/~perlin/
 class PerlinNoise
   PERLIN_YWRAPB = 4
   PERLIN_YWRAP = 1 << PERLIN_YWRAPB;
